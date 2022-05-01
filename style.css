@@ -1,0 +1,329 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer
+{
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0%;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+
+}
+.header
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: flex-start;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0%;
+    padding: 16px 32px;
+}
+.header .header-icon
+{
+    width: 30%;
+    display: block;
+    font-size: 25px;
+    margin-left: 20px;
+}
+.header .navbar 
+{
+    margin-left: 500px;
+    
+}
+.header .navbar ul
+{
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 -16px;
+}
+.header .navbar ul li
+{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 10px 32px;
+    border-radius: 5px;
+    list-style: none;
+    transition: 0.25s;
+}
+.header .navbar ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+.header .navbar ul li:hover:nth-child(1)
+{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.header .navbar ul li:hover:nth-child(2)
+{
+    background-color: rgba(140, 255, 87, 0.8);
+}
+.header .navbar ul li:hover:nth-child(3)
+{
+    background-color: rgba(98, 87, 255, 0.8);
+}
+.main-sec
+{
+    color: black;
+    width: 100%;
+    height: 100vh;
+}
+.main-sec .sec1
+{
+    background-color: rgba(255, 0, 0, 0.2);
+    height: 100vh;
+    padding: 220px 100px ;
+    display: flex;
+    align-items: flex-start;
+}
+.main-sec .sec1 .sec-text
+{
+    width: 50%;
+}
+.main-sec .sec1 .sec-text p
+{
+    line-height: 25px;
+}
+.main-sec .sec1 .sec-text h4
+{
+    margin: 10px 0 0 0 ;
+    font-size: 15px;
+
+}
+.main-sec .sec1 .sec-icon
+{
+    width: 50%;
+    font-weight: bold;
+    font-size: 130px;
+    padding-top: 23px;
+    padding-left: 70px;
+    text-align: center;
+    opacity: 0.1;
+
+}
+
+.main-sec .sec 
+{
+    background-color: rgba(140, 255, 87, 0.2);
+    height: 100vh;
+    padding: 170px 100px;
+    display: flex;
+    align-items: flex-start;
+}
+.main-sec .sec2
+{
+    background-color: rgba(98, 87, 255, 0.2);
+    height: 100vh;
+    padding: 170px 100px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.main-sec .sec .about-header
+{
+    width: 100%;
+    font-size: 100px;
+    padding-top: 0;
+    margin-right: 25px;
+    text-align: center;
+    border-right: 2px solid black;
+}
+.main-sec .sec .about-header h2
+{
+    opacity: 0.2;
+}
+.main-sec .sec2 ul
+{
+    width: 100%;
+    display: block;
+}
+.main-sec .sec2 ul li
+{
+    list-style-type: none;
+    width: 350px;
+    height: 50px;
+    margin: 25px 0;
+    display: block;
+
+}
+.main-sec .sec2 ul li a
+{
+    text-decoration: none;
+    display: flex;
+    width: 350px;
+    height: 50px;
+    border-radius: 0 32px 32px 0;
+    text-align: left;
+    padding: 16px;
+    font-size: 18px;
+    color: black;
+    background-color: #38383800;
+    transition: .2s;
+}
+.main-sec .sec2 ul li a:hover
+{
+    color: white;
+}
+.main-sec .sec2 ul li:nth-child(1) a:hover
+{
+    background-color: black;
+}
+.main-sec .sec2 ul li:nth-child(2) a:hover
+{
+    background-color: rgb(221, 61, 61);
+}
+.main-sec .sec2 ul li:nth-child(3) a:hover
+{
+    background-color: rgb(52, 52, 209);
+}
+.main-sec .sec2 ul li:nth-child(4) a:hover
+{
+    background-color: rgb(52, 52, 209);
+}
+
+.main-sec .sec2 .sec-icon
+{
+    width: 50%;
+    font-weight: bold;
+    font-size: 130px;
+    padding-top: 10px;
+    padding-left: 70px;
+    text-align: center;
+    opacity: 0.1;
+}
+
+
+i
+{
+    margin-right:20px;
+    font-size: 40px;
+}
+.sm-navbar
+{
+    display: none;
+}
+
+@media screen and (max-width: 1316px)
+{
+    .header
+    {
+    display: block;
+    padding: 16px 0px;
+    }
+    .header .navbar
+    {
+        display: none;
+    }
+    .header .header-icon {
+        width: 100%;
+        display: block;
+        font-size: 25px;
+        text-align: center;
+    }
+    .sm-navbar
+    {
+       display: block;
+       width: 100%;
+       margin-top: 20px;
+    }
+    .sm-navbar ul{
+        display: flex;
+        align-items: flex-start;
+    }
+    .sm-navbar ul li {
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+
+    }
+    .sm-navbar ul li a {
+        display: block;
+        background-color: black;
+        height: 25px;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        transition: .25s;
+        padding: 5px 0 ;
+
+    }
+    .sm-navbar ul li:nth-child(1) a:hover
+    {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+    .sm-navbar ul li:nth-child(2) a:hover
+    {
+        background-color: rgba(140, 255, 87, 0.8);
+    }
+    .sm-navbar ul li:nth-child(3) a:hover
+    {
+        background-color: rgba(98, 87, 255, 0.8);
+    }
+    
+
+
+    .main-sec .sec1 {
+        display: block;
+        padding: 170px 50px;
+        text-align: center;
+    }
+    .main-sec .sec1 .sec-text {
+        width: 100%;
+        padding: 0 50px ;
+    }
+
+    .main-sec .sec1 .sec-icon {
+        display: none;
+    }
+    .main-sec .sec{
+    height: 100vh;
+    padding: 160px 50px ;
+    text-align: center;
+    }
+    .main-sec .sec .about-header {
+        display: none;
+    }
+
+    .main-sec .sec2 .sec-icon {
+        display: none;
+    }
+    .main-sec .sec2 {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .main-sec .sec2 ul{
+        width: auto;
+    }
+    .main-sec .sec2 ul li a
+    {
+        width: 350px;
+        height: 60px;
+        border-radius: 0;
+        padding: 16px;
+        font-size: 18px;
+        color: black;
+        background-color: #38383800;
+        transition: .2s;
+    }
+}
